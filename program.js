@@ -282,30 +282,40 @@
 
 // calculate how many vowels and consonants are in a given string using for of loop
 
-let string = "Hello World";
+// let string = "Hello World";
 
-let vowelCount = 0;
-let consonantCount = 0;
+// let vowelCount = 0;
+// let consonantCount = 0;
 
-for (let item of string) {
-  if (
-    item === "a" ||
-    item === "e" ||
-    item === "i" ||
-    item === "o" ||
-    item === "u" ||
-    item === "A" ||
-    item === "E" ||
-    item === "I" ||
-    item === "O" ||
-    item === "U"
-  ) {
-    vowelCount++;
-  } else if (item === " ") {
-    console.log("space found");
-  } else {
-    consonantCount++;
-  }
+// for (let item of string) {
+//   if (
+//     item === "a" ||
+//     item === "e" ||
+//     item === "i" ||
+//     item === "o" ||
+//     item === "u" ||
+//     item === "A" ||
+//     item === "E" ||
+//     item === "I" ||
+//     item === "O" ||
+//     item === "U"
+//   ) {
+//     vowelCount++;
+//   } else if (item === " ") {
+//     console.log("space found");
+//   } else {
+//     consonantCount++;
+//   }
+// }
+// console.log(`Vowels: ${vowelCount}`);
+// console.log(`Consonants: ${consonantCount}`);
+
+// challange -10
+
+// calculate sum of first "n" numbers
+const n = prompt("Enter a number:");
+let sum = 0;
+for (let i = 1; i <= n; i++) {
+  sum += i;
+  console.log("sum =", sum);
 }
-console.log(`Vowels: ${vowelCount}`);
-console.log(`Consonants: ${consonantCount}`);
