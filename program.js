@@ -107,12 +107,136 @@
 
 // challange-4
 
-let subscriptionType = "standard";
+// let subscriptionType = "standard";
 
-if (subscriptionType === "premium") {
-  console.log("You have a premium subscription.");
-} else if (subscriptionType === "standard") {
-  console.log("You have a standard subscription.");
-} else {
-  console.log("U have to subscribe");
+// if (subscriptionType === "premium") {
+//   console.log("You have a premium subscription.");
+// } else if (subscriptionType === "standard") {
+//   console.log("You have a standard subscription.");
+// } else {
+//   console.log("U have to subscribe");
+// }
+
+// challange-5
+
+// let color = "white";
+
+// let themecolor = prompt("Enter a theme color (light, dark, pink):");
+
+// if (themecolor === "light") {
+//   color = "white";
+// } else if (themecolor === "dark") {
+//   color = "black";
+// } else if (themecolor === "pink") {
+//   color = "pink";
+// } else {
+//   console.log("No color found");
+// }
+
+// if (themecolor !== "light" && themecolor !== "dark" && themecolor !== "pink") {
+//   console.log("No color found");
+// } else {
+//   console.log(
+//     `Your selected theme color is: ${themecolor}, and the corresponding color is: ${color}`,
+//   );
+// }
+
+// challange-6
+
+// let num1 = Number(prompt("Enter the first number:"));
+// let num2 = Number(prompt("Enter the second number:"));
+// let num3 = Number(prompt("Enter the third number:"));
+
+// if (num1 < num2 && num1 < num3) {
+//   console.log(`The smallest number is: ${num1}`);
+// } else if (num2 < num1 && num2 < num3) {
+//   console.log(`The smallest number is: ${num2}`);
+// } else {
+//   console.log(`The smallest number is: ${num3}`);
+// }
+
+// challange-5
+
+// let userRole = "admin";
+
+// switch (userRole) {
+//   case "admin":
+//     console.log("You have full access to the system.");
+//     break;
+//   case "editor":
+//     console.log("You have editor access to the system.");
+//     break;
+//   case "viewer":
+//     console.log("You have viewer access to the system.");
+//     break;
+//   default:
+//     console.log("You have no access to the system.");
+// }
+
+// challange-6
+
+// let num = 23;
+
+// if (num % 3 === 0 && num % 5 === 0) {
+//   console.log("fizz");
+// } else if (num % 5 === 0) {
+//   console.log("buzz");
+// } else if (num % 3 === 0) {
+//   console.log("fizzbuzz");
+// } else {
+//   console.log("neither divisible by 3 or 5");
+// }
+
+// challange-7
+
+// let num1 = 23;
+// let num2 = 45;
+// let operator = "+";
+
+// switch (operator) {
+//   case "+":
+//     console.log(`${num1} ${operator} ${num2} = ${num1 + num2}`);
+//     break;
+//   case "-":
+//     console.log(`${num1} ${operator} ${num2} = ${num1 - num2}`);
+//     break;
+//   case "*":
+//     console.log(`${num1} ${operator} ${num2} = ${num1 * num2}`);
+//     break;
+//   case "/":
+//     console.log(`${num1} ${operator} ${num2} = ${num1 / num2}`);
+//     break;
+// }
+
+// challange-8
+
+let totalBalance = 1000;
+let userChoice = Number(
+  prompt(
+    "Enter your choice [1. Check Balance, 2. Deposit, 3. Withdraw 4. Exit]:",
+  ),
+);
+
+if (userChoice === 1) {
+  console.log(`Your current balance is: $${totalBalance}`);
+} else if (userChoice === 2) {
+  let depositAmount = Number(prompt("Enter the amount to deposit:"));
+  if (depositAmount > 0) {
+    totalBalance += depositAmount;
+    console.log(`Deposit successful! Your new balance is: $${totalBalance}`);
+  } else {
+    console.log("Invalid deposit amount. Please enter a positive number.");
+  }
+} else if (userChoice === 3) {
+  let withdrawAmount = Number(prompt("Enter the amount to withdraw:"));
+  if (withdrawAmount > 0 && withdrawAmount <= totalBalance) {
+    totalBalance -= withdrawAmount;
+    console.log(`Withdrawal successful! Your new balance is: $${totalBalance}`);
+  } else {
+    console.log(
+      "Invalid withdrawal amount. Please enter a positive number less than or equal to your balance.",
+    );
+  }
+} else if (userChoice === 4) {
+  console.log("Thank you for using our banking system. Goodbye!");
 }
