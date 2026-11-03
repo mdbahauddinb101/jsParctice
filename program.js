@@ -210,33 +210,102 @@
 
 // challange-8
 
-let totalBalance = 1000;
-let userChoice = Number(
-  prompt(
-    "Enter your choice [1. Check Balance, 2. Deposit, 3. Withdraw 4. Exit]:",
-  ),
-);
+// let totalBalance = 1000;
+// let userChoice = Number(
+//   prompt(
+//     "Enter your choice [1. Check Balance, 2. Deposit, 3. Withdraw 4. Exit]:",
+//   ),
+// );
 
-if (userChoice === 1) {
-  console.log(`Your current balance is: $${totalBalance}`);
-} else if (userChoice === 2) {
-  let depositAmount = Number(prompt("Enter the amount to deposit:"));
-  if (depositAmount > 0) {
-    totalBalance += depositAmount;
-    console.log(`Deposit successful! Your new balance is: $${totalBalance}`);
+// if (userChoice === 1) {
+//   console.log(`Your current balance is: $${totalBalance}`);
+// } else if (userChoice === 2) {
+//   let depositAmount = Number(prompt("Enter the amount to deposit:"));
+//   if (depositAmount > 0) {
+//     totalBalance += depositAmount;
+//     console.log(`Deposit successful! Your new balance is: $${totalBalance}`);
+//   } else {
+//     console.log("Invalid deposit amount. Please enter a positive number.");
+//   }
+// } else if (userChoice === 3) {
+//   let withdrawAmount = Number(prompt("Enter the amount to withdraw:"));
+//   if (withdrawAmount > 0 && withdrawAmount <= totalBalance) {
+//     totalBalance -= withdrawAmount;
+//     console.log(`Withdrawal successful! Your new balance is: $${totalBalance}`);
+//   } else {
+//     console.log(
+//       "Invalid withdrawal amount. Please enter a positive number less than or equal to your balance.",
+//     );
+//   }
+// } else if (userChoice === 4) {
+//   console.log("Thank you for using our banking system. Goodbye!");
+// }
+
+// loops
+
+// for (let i = 1; i <= 5; i++) {
+//   console.log("Iteration number: " + i);
+// }
+
+// let i=1;
+// while (i <= 5) {
+//   console.log("Iteration number: " + i);
+//   i++;
+// }
+
+// let i = 1;
+// do {
+//   console.log("Iteration number: " + i);
+//   i++;
+// } while (i <= 5);
+
+// this is for of loop
+// let str = "Hello, World!";
+// for (let item of str) {
+//   console.log(item);
+// }
+
+// ata avabe o kora jay
+// for (let i = 0; i < str.length; i++) {
+//   console.log(str[i]);
+// }
+
+// challange-9
+
+// print all even numbers from 1 to 100 using a for loop.
+
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// calculate how many vowels and consonants are in a given string using for of loop
+
+let string = "Hello World";
+
+let vowelCount = 0;
+let consonantCount = 0;
+
+for (let item of string) {
+  if (
+    item === "a" ||
+    item === "e" ||
+    item === "i" ||
+    item === "o" ||
+    item === "u" ||
+    item === "A" ||
+    item === "E" ||
+    item === "I" ||
+    item === "O" ||
+    item === "U"
+  ) {
+    vowelCount++;
+  } else if (item === " ") {
+    console.log("space found");
   } else {
-    console.log("Invalid deposit amount. Please enter a positive number.");
+    consonantCount++;
   }
-} else if (userChoice === 3) {
-  let withdrawAmount = Number(prompt("Enter the amount to withdraw:"));
-  if (withdrawAmount > 0 && withdrawAmount <= totalBalance) {
-    totalBalance -= withdrawAmount;
-    console.log(`Withdrawal successful! Your new balance is: $${totalBalance}`);
-  } else {
-    console.log(
-      "Invalid withdrawal amount. Please enter a positive number less than or equal to your balance.",
-    );
-  }
-} else if (userChoice === 4) {
-  console.log("Thank you for using our banking system. Goodbye!");
 }
+console.log(`Vowels: ${vowelCount}`);
+console.log(`Consonants: ${consonantCount}`);
