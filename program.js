@@ -408,10 +408,59 @@
 
 // challange -16
 
-find the factorial of n
-let n = Number(prompt("Enter a number:"));
-let factorial = 1;
-for (let i = 1; i <= n; i++) {
-  factorial *= i;
+// find the factorial of n
+// let n = Number(prompt("Enter a number:"));
+// let factorial = 1;
+// for (let i = 1; i <= n; i++) {
+//   factorial *= i;
+// }
+// console.log(`Factorial of ${n} is ${factorial}`);
+
+// challange-17
+
+// let n = 5;
+
+// for (let i = 1; i <= n; i++) {
+//   let str = "";
+//   for (let j = 1; j <= i; j++) {
+//     str += j;
+//   }
+//   console.log(str);
+// }
+
+// challange-18
+// game
+
+let playagain = "yes";
+
+while (playagain === "yes") {
+  alert("you wake up in the dark forest!");
+  let userChoice = prompt(
+    "Do you want to go left or right? (Type 'left' or 'right')",
+  );
+
+  if (userChoice === "left") {
+    alert("You see something shiny in the mud.");
+    userChoice = prompt("Do you pick it up? (Type 'yes' or 'no')");
+    if (userChoice === "yes") {
+      alert("You win!");
+    } else {
+      alert("You lose!");
+    }
+  } else if (userChoice === "right") {
+    alert("do you enter the cave? (Type 'yes' or 'no')");
+    userChoice = prompt("Do you enter the cave? (Type 'yes' or 'no')");
+    if (userChoice === "yes") {
+      alert("You win!");
+    } else {
+      alert("You lose!");
+    }
+  }
+
+  userChoice = prompt("Do you want to play again? (Type 'yes' or 'no')");
+
+  if (userChoice === "no") {
+    playagain = "no";
+    alert("Thanks for playing!");
+  }
 }
-console.log(`Factorial of ${n} is ${factorial}`);
