@@ -313,9 +313,76 @@
 // challange -10
 
 // calculate sum of first "n" numbers
-const n = prompt("Enter a number:");
-let sum = 0;
-for (let i = 1; i <= n; i++) {
-  sum += i;
-  console.log("sum =", sum);
+// const n = prompt("Enter a number:");
+// let sum = 0;
+// for (let i = 1; i <= n; i++) {
+//   sum += i;
+//   console.log("sum =", sum);
+// }
+
+//
+// challange-11
+
+// calculate the sum of numbers m to n
+// let m = Number(prompt("Enter the starting number (m):"));
+// let n = Number(prompt("Enter the ending number (n):"));
+
+// let sum = 0;
+// for (let i = m; i <= n; i++) {
+//   sum += i;
+//   console.log("sum =", sum);
+// }
+
+// find odd and even numbers from 1 to n
+
+// let n = Number(prompt("Enter a number:"));
+
+// for (let i = 1; i <= n; i++) {
+//   if (i % 2 !== 0) {
+//     console.log(i + " is odd");
+//   } else {
+//     console.log(i + " is even");
+//   }
+// }
+
+//  challange-12
+// print all odd numbers 0 to n
+
+// let n = Number(prompt("Enter a number:"));
+
+// for (let i = 0; i <= n; i++) {
+//   if (i % 2 !== 0) {
+//     console.log(i);
+//   }
+// }
+
+// challange-13
+
+// let computerNumber = 6;
+// let guessNumber = Number(prompt("Enter a number:"));
+// if(isNaN(guessNumber)){
+//     console.log("Please enter a valid number");
+// }else if (guessNumber === computerNumber) {
+//   console.log("You won!");
+// } else {
+//   console.log("You lost!");
+// }
+
+// challange-14
+
+let computerNumber = 6;
+let guess = null;
+
+guess = Number(prompt("Enter correct number:"));
+
+while (guess !== computerNumber) {
+  if (isNaN(guess)) {
+    alert("Please enter a valid number");
+  } else if (guess < computerNumber) {
+    alert("Too low! Try again.");
+  } else if (guess > computerNumber) {
+    alert("Too high! Try again.");
+  } else {
+    alert("Congratulations! You guessed the correct number.");
+  }
 }
