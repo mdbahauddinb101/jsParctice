@@ -389,19 +389,29 @@
 
 // challange-15
 
-let password = "alpha";
-let nofAttempts = 0;
-let usePassword = null;
+// let password = "alpha";
+// let nofAttempts = 0;
+// let usePassword = null;
 
-while (usePassword !== password && nofAttempts < 3) {
-  usePassword = prompt("Enter the password:");
-  nofAttempts++;
+// while (usePassword !== password && nofAttempts < 3) {
+//   usePassword = prompt("Enter the password:");
+//   nofAttempts++;
 
-  if (usePassword === password) {
-    console.log("Access granted!");
-  } else if (nofAttempts >= 3) {
-    alert("attempt is over");
-  } else {
-    console.log("Access denied!");
-  }
+//   if (usePassword === password) {
+//     console.log("Access granted!");
+//   } else if (nofAttempts >= 3) {
+//     alert("attempt is over");
+//   } else {
+//     console.log("Access denied!");
+//   }
+// }
+
+// challange -16
+
+find the factorial of n
+let n = Number(prompt("Enter a number:"));
+let factorial = 1;
+for (let i = 1; i <= n; i++) {
+  factorial *= i;
 }
+console.log(`Factorial of ${n} is ${factorial}`);
