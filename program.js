@@ -370,19 +370,38 @@
 
 // challange-14
 
-let computerNumber = 6;
-let guess = null;
+// let computerNumber = 6;
+// let guess = null;
 
-guess = Number(prompt("Enter correct number:"));
+// guess = Number(prompt("Enter correct number:"));
 
-while (guess !== computerNumber) {
-  if (isNaN(guess)) {
-    alert("Please enter a valid number");
-  } else if (guess < computerNumber) {
-    alert("Too low! Try again.");
-  } else if (guess > computerNumber) {
-    alert("Too high! Try again.");
+// while (guess !== computerNumber) {
+//   if (isNaN(guess)) {
+//     alert("Please enter a valid number");
+//   } else if (guess < computerNumber) {
+//     alert("Too low! Try again.");
+//   } else if (guess > computerNumber) {
+//     alert("Too high! Try again.");
+//   } else {
+//     alert("Congratulations! You guessed the correct number.");
+//   }
+// }
+
+// challange-15
+
+let password = "alpha";
+let nofAttempts = 0;
+let usePassword = null;
+
+while (usePassword !== password && nofAttempts < 3) {
+  usePassword = prompt("Enter the password:");
+  nofAttempts++;
+
+  if (usePassword === password) {
+    console.log("Access granted!");
+  } else if (nofAttempts >= 3) {
+    alert("attempt is over");
   } else {
-    alert("Congratulations! You guessed the correct number.");
+    console.log("Access denied!");
   }
 }
