@@ -507,10 +507,21 @@
 
 // Make an arrow function that takes a price and a discount, and returns the price after discount.
 
-let calculateDiscount = (price, discount) => {
-  let discountedPrice = price - price * (discount / 100);
-  return discountedPrice;
-};
+// let calculateDiscount = (price, discount) => {
+//   let discountedPrice = price - price * (discount / 100);
+//   return discountedPrice;
+// };
 
-let result = calculateDiscount(100, 10);
-console.log(result);
+// let result = calculateDiscount(100, 10);
+// console.log(result);
+
+// challange-22
+// Create a function that builds a username from a full name
+
+// function generateUserName (firstName, lastName) {
+//   let userName = firstName + lastName;
+//   return userName;
+// }
+
+// let result = generateUserName("John", "Doe");
+// console.log(result);
