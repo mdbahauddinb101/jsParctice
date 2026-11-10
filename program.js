@@ -525,3 +525,20 @@
 
 // let result = generateUserName("John", "Doe");
 // console.log(result);
+
+// challange-23
+
+// write a function that takes a traffic light color and gives the correct instructions
+
+function trafficInstructions(color) {
+  if (color === "red") {
+    return "Stop!";
+  } else if (color === "yellow") {
+    return "Slow down!";
+  } else if (color === "green") {
+    return "Go!";
+  }
+}
+
+let result = trafficInstructions("red");
+console.log(result);
