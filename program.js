@@ -499,6 +499,18 @@
 
 // show an alert message that says "Please Login" after % seconds of ur website
 
-setTimeout(() => {
-  alert("Please Login");
-}, 5000);
+// setTimeout(() => {
+//   alert("Please Login");
+// }, 5000);
+
+// challange-21
+
+// Make an arrow function that takes a price and a discount, and returns the price after discount.
+
+let calculateDiscount = (price, discount) => {
+  let discountedPrice = price - price * (discount / 100);
+  return discountedPrice;
+};
+
+let result = calculateDiscount(100, 10);
+console.log(result);
