@@ -530,15 +530,25 @@
 
 // write a function that takes a traffic light color and gives the correct instructions
 
-function trafficInstructions(color) {
-  if (color === "red") {
-    return "Stop!";
-  } else if (color === "yellow") {
-    return "Slow down!";
-  } else if (color === "green") {
-    return "Go!";
-  }
-}
+// function trafficInstructions(color) {
+//   if (color === "red") {
+//     return "Stop!";
+//   } else if (color === "yellow") {
+//     return "Slow down!";
+//   } else if (color === "green") {
+//     return "Go!";
+//   }
+// }
 
-let result = trafficInstructions("red");
-console.log(result);
+// let result = trafficInstructions("red");
+// console.log(result);
+
+// strings.................................................................................
+
+// challange-24
+
+// Create  aprogram to take full name from user and generate a username start with @, followed their full name and ends with underscore followed by the length of full name.
+let fullName = prompt("Enter your full name:");
+let userName = `@${fullName.trim().replaceAll(" ", "")}_${fullName.length}`;
+let userName2 = `@${fullName}_${fullName.length}`;
+console.log(userName);
