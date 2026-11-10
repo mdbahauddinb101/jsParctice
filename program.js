@@ -431,36 +431,66 @@
 // challange-18
 // game
 
-let playagain = "yes";
+// let playagain = "yes";
 
-while (playagain === "yes") {
-  alert("you wake up in the dark forest!");
-  let userChoice = prompt(
-    "Do you want to go left or right? (Type 'left' or 'right')",
-  );
+// while (playagain === "yes") {
+//   alert("you wake up in the dark forest!");
+//   let userChoice = prompt(
+//     "Do you want to go left or right? (Type 'left' or 'right')",
+//   );
 
-  if (userChoice === "left") {
-    alert("You see something shiny in the mud.");
-    userChoice = prompt("Do you pick it up? (Type 'yes' or 'no')");
-    if (userChoice === "yes") {
-      alert("You win!");
-    } else {
-      alert("You lose!");
-    }
-  } else if (userChoice === "right") {
-    alert("do you enter the cave? (Type 'yes' or 'no')");
-    userChoice = prompt("Do you enter the cave? (Type 'yes' or 'no')");
-    if (userChoice === "yes") {
-      alert("You win!");
-    } else {
-      alert("You lose!");
-    }
-  }
+//   if (userChoice === "left") {
+//     alert("You see something shiny in the mud.");
+//     userChoice = prompt("Do you pick it up? (Type 'yes' or 'no')");
+//     if (userChoice === "yes") {
+//       alert("You win!");
+//     } else {
+//       alert("You lose!");
+//     }
+//   } else if (userChoice === "right") {
+//     alert("do you enter the cave? (Type 'yes' or 'no')");
+//     userChoice = prompt("Do you enter the cave? (Type 'yes' or 'no')");
+//     if (userChoice === "yes") {
+//       alert("You win!");
+//     } else {
+//       alert("You lose!");
+//     }
+//   }
 
-  userChoice = prompt("Do you want to play again? (Type 'yes' or 'no')");
+//   userChoice = prompt("Do you want to play again? (Type 'yes' or 'no')");
 
-  if (userChoice === "no") {
-    playagain = "no";
-    alert("Thanks for playing!");
-  }
+//   if (userChoice === "no") {
+//     playagain = "no";
+//     alert("Thanks for playing!");
+//   }
+// }
+
+// function calculateSum(m, n) {
+//   let sum = 0;
+//   for (let i = m; i <= n; i++) {
+//     sum += i;
+//     console.log("sum =", sum);
+//   }
+// }
+
+// calculateSum(1, 10);
+
+// setTimeout(() => {
+//   console.log("This message is displayed after 2 seconds.");
+// }, 2000);
+
+// let alpha = () => {
+//   console.log("This is an arrow function.");
+// };
+
+// setTimeout(alpha, 3000);
+
+// challange-19
+
+// write a regular fuc-nction that takes a string and returns it with the first letter capitalized
+
+function capitalizeFirstLetter(str) {
+  console.log(str.charAt(0).toUpperCase() + str.slice(1));
 }
+
+capitalizeFirstLetter("hello"); // Output: "Hello"
