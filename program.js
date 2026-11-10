@@ -560,20 +560,28 @@
 // b) case-insensetive version
 // c)fIND ALL occurance position
 
-let str = prompt("Enter your string:");
-let ch = prompt("Enter your character:");
+// let str = prompt("Enter your string:");
+// let ch = prompt("Enter your character:");
 
-let count = 0;
+// let count = 0;
 // for (let val of str) {
 //   if (val.toLowerCase() === ch.toLowerCase) {
 //     count++;
 //   }
 // }
-for (let index in str) {
-  if (str[index].toLowerCase() === ch.toLowerCase()) {
-    console.log(index);
-    count++;
-  }
-}
+// for (let index in str) {
+//   if (str[index].toLowerCase() === ch.toLowerCase()) {
+//     console.log(index);
+//     count++;
+//   }
+// }
 
+// console.log(count);
+
+// challange -26
+// Count the words present in a given string
+
+let str = "Hello i am a boy";
+let words = str.split(" ");
+let count = words.length;
 console.log(count);
