@@ -548,7 +548,32 @@
 // challange-24
 
 // Create  aprogram to take full name from user and generate a username start with @, followed their full name and ends with underscore followed by the length of full name.
-let fullName = prompt("Enter your full name:");
-let userName = `@${fullName.trim().replaceAll(" ", "")}_${fullName.length}`;
-let userName2 = `@${fullName}_${fullName.length}`;
-console.log(userName);
+// let fullName = prompt("Enter your full name:");
+// let userName = `@${fullName.trim().replaceAll(" ", "")}_${fullName.length}`;
+// let userName2 = `@${fullName}_${fullName.length}`;
+// console.log(userName);
+
+//challlange-25
+//  Take a string and a character from the user and:
+
+// a)Count how many times that  character appears in the string.
+// b) case-insensetive version
+// c)fIND ALL occurance position
+
+let str = prompt("Enter your string:");
+let ch = prompt("Enter your character:");
+
+let count = 0;
+// for (let val of str) {
+//   if (val.toLowerCase() === ch.toLowerCase) {
+//     count++;
+//   }
+// }
+for (let index in str) {
+  if (str[index].toLowerCase() === ch.toLowerCase()) {
+    console.log(index);
+    count++;
+  }
+}
+
+console.log(count);
