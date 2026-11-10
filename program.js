@@ -489,8 +489,16 @@
 
 // write a regular fuc-nction that takes a string and returns it with the first letter capitalized
 
-function capitalizeFirstLetter(str) {
-  console.log(str.charAt(0).toUpperCase() + str.slice(1));
-}
+// function capitalizeFirstLetter(str) {
+//   console.log(str.charAt(0).toUpperCase() + str.slice(1));
+// }
 
-capitalizeFirstLetter("hello"); // Output: "Hello"
+// capitalizeFirstLetter("hello"); // Output: "Hello"
+
+//challange-20
+
+// show an alert message that says "Please Login" after % seconds of ur website
+
+setTimeout(() => {
+  alert("Please Login");
+}, 5000);
