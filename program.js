@@ -600,11 +600,92 @@
 
 // For an array with marks of students fund the average marks of the entire class.
 
-let arr = [5, 10, 15];
+// let arr = [5, 10, 15];
 
-let sum = arr.reduce((acc, val) => {
-  return acc + val;
-}, 0);
+// let sum = arr.reduce((acc, val) => {
+//   return acc + val;
+// }, 0);
 
-let average = sum / arr.length;
-console.log(average);
+// let average = sum / arr.length;
+// console.log(average);
+
+//  challange-28
+
+// Create an array with the given length(n) and fill with 0;
+
+// let arr = new Array(10).fill(0);
+// console.log(arr);
+
+// challange-29
+
+// Create an array with the given length (n) and store natural numbers from 1 to n.
+
+// let n = 25;
+
+// let arr = new  Array(25).fill(0);
+// arr.forEach((item, index) => {
+//     arr[index] = index + 1;
+// })
+
+// challange-30
+
+// Consider an array of mcu heroes [ironman,captain,black widow,wanda, hulk,black panther]
+// a) Add spiderman at the end and thor at the start.
+// b) Remove black widow and add hawkeye in its place.
+// c) Check whether captain is present in the array.
+
+// let arr = ["ironman", "captain", "black widow", "wanda", "hulk", "black panther"];
+// arr.push("spiderman");
+// arr.unshift("thor");
+// arr.splice(arr.indexOf("black widow"), 1, "hawkeye");
+// console.log(arr.includes("captain"));
+
+// challange-31
+
+// How to check if given thing is array or not?How to convert other datatypes to array? what if we try to convert object into array?
+
+// let test = 2;
+// Array.isArray(test);
+// console.log(Array.isArray(test));
+// let test2 = "makl";
+// Array.isArray(test2);
+// console.log(Array.from(test2));
+
+// challange-32
+// we have three variables a,b,c.a contains any Number,b contains any string,c contains any Object,and d contains an array.Can we create an array from all these four variables? if yes how?
+// let a = 1;
+// let b = "dfdsfdf";
+// let c = {
+//   name: "manas",
+// };
+// let d = [1, 2, 3];
+// console.log(d);
+// console.log(Array.of(a, b, c, d));
+
+// challange-33
+
+// Check whether given string is palindrome or not.
+// let str = "madam";
+// let str2 = Array.from(str).reverse().join("");
+// let arr = [1, 2, 3];
+// let result = arr.reverse();
+// console.log(result);
+// let str3 = "hello";
+// let revstr = str.split("").reverse().join("");
+
+// if (str === revstr) {
+//     console.log("palindrome string");
+// } else {
+//     console.log("not a palindrome string");
+// }
+
+// challange-34
+
+// Capitalize the first letter of every word in sentence
+
+let str = "hello world";
+let arr = str.split(" ");
+let result = arr.map((item) => {
+    return item.charAt(0).toUpperCase() + item.slice(1);
+});
+console.log(result.join(" "));
