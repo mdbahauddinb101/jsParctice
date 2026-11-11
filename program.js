@@ -581,7 +581,30 @@
 // challange -26
 // Count the words present in a given string
 
-let str = "Hello i am a boy";
-let words = str.split(" ");
-let count = words.length;
-console.log(count);
+// let str = "Hello i am a boy";
+// let words = str.split(" ");
+// let count = words.length;
+// console.log(count);
+// Array.isArray..............................................
+// let arr = [2, 4, 5, 8, 9];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+// let arr = [2, 4, 5, 8, 9];
+
+// for (let index in arr) {
+//   console.log(arr[index]);
+// }
+
+// challange-27
+
+// For an array with marks of students fund the average marks of the entire class.
+
+let arr = [5, 10, 15];
+
+let sum = arr.reduce((acc, val) => {
+  return acc + val;
+}, 0);
+
+let average = sum / arr.length;
+console.log(average);
