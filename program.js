@@ -683,9 +683,27 @@
 
 // Capitalize the first letter of every word in sentence
 
-let str = "hello world";
-let arr = str.split(" ");
-let result = arr.map((item) => {
-    return item.charAt(0).toUpperCase() + item.slice(1);
-});
-console.log(result.join(" "));
+// let str = "hello world";
+// let arr = str.split(" ");
+// let result = arr.map((item) => {
+//     return item.charAt(0).toUpperCase() + item.slice(1);
+// });
+// console.log(result.join(" "));
+
+// Dom Manipulation...........................................
+
+let div = document.createElement("div");
+let elem = document.createElement("p");
+elem.innerText = "nEW pARAGRAPH";
+// div.append(elem);
+// document.body.prepend(div);
+
+document.body.after(div);
+
+// div.prepend(elem);
+// div.after(elem);
+
+// div.insertAdjacentElement("afterend", elem);
+
+let h1 = div.children[0];
+h1.remove();
