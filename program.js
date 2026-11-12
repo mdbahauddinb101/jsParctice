@@ -748,15 +748,22 @@
 //   height: "100px",
 // });
 
-
 //challange 39
 
 //Create a function that takes node and newTagName and replace the node from the new node with changing tag name in the dom.
 
-function changeTageName(Oldnode, newTagName) {
-
-
+function changeTageName(oldNode, newTagName) {
+  if (oldNode instanceof Element) {
+    let p = document.createElement(newTagName);
+    p.innerHTML = oldNode.innerHTML;
+    for (let attr of oldNode.attributes) {
+      p.setAttribute(attr.name, attr.value);
+    }
+    oldNode.replaceWith(p);
+  } else {
+    console.error("invalid node");
+  }
 }
 
 let div = document.querySelector(".box");
-changeTageName(div, "p");
+changeTageName(div, "h1");
