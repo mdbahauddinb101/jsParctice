@@ -692,18 +692,28 @@
 
 // Dom Manipulation...........................................
 
-let div = document.createElement("div");
-let elem = document.createElement("p");
-elem.innerText = "nEW pARAGRAPH";
-// div.append(elem);
-// document.body.prepend(div);
+// let div = document.createElement("div");
+// let elem = document.createElement("p");
+// elem.innerText = "nEW pARAGRAPH";
+// // div.append(elem);
+// // document.body.prepend(div);
 
-document.body.after(div);
+// document.body.after(div);
 
 // div.prepend(elem);
 // div.after(elem);
 
 // div.insertAdjacentElement("afterend", elem);
 
-let h1 = div.children[0];
-h1.remove();
+// let h1 = div.children[0];
+// h1.remove();
+
+//  challange-36
+
+//Create a paragraph with text "This is a new paragraph" and add background to black font color using javascript.
+
+let p = document.createElement("p");
+p.innerText = "This is a new paragraph";
+p.style.backgroundColor = "red";
+p.style.color = "white";
+document.body.append(p);
