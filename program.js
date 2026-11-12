@@ -712,8 +712,24 @@
 
 //Create a paragraph with text "This is a new paragraph" and add background to black font color using javascript.
 
+// let p = document.createElement("p");
+// p.innerText = "This is a new paragraph";
+// p.style.backgroundColor = "red";
+// p.style.color = "white";
+// document.body.append(p);
+
+// p.setAttribute("style", "background-color: red; color: white;");
+
+ //challange-37
+
+//Insert a button with text "click me" as the first element inside paragraph created in challange-36
+
 let p = document.createElement("p");
 p.innerText = "This is a new paragraph";
 p.style.backgroundColor = "red";
 p.style.color = "white";
 document.body.append(p);
+
+let button = document.createElement("button");
+button.innerText = "click me";
+p.prepend(button);
