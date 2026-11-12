@@ -775,13 +775,28 @@
 // b)add a new property called email to the person object.
 // c)remove the "city" property from the person object.
 
+// let obj = {
+//   name: "babu",
+//   age: 20,
+//   city: "chennai",
+// };
+// obj.email = "O9cYB@example.com";
+// delete obj.city;
+// for (let key in obj) {
+//   console.log(`Value of ${key} is ${obj[key]}`);
+// }
+
+// challange-41
+
+//Create a function that takes object with firstName, middleName, lastName and returns the full name
+
 let obj = {
-  name: "babu",
-  age: 20,
-  city: "chennai",
+  firstName: "habu",
+  middleName: "kumar",
+  lastName: "lal",
 };
-obj.email = "O9cYB@example.com";
-delete obj.city;
-for (let key in obj) {
-  console.log(`Value of ${key} is ${obj[key]}`);
+function fullName(obj) {
+  return `${obj.firstName} ${obj.middleName} ${obj.lastName}`;
 }
+let full = fullName(obj);
+console.log(full);
