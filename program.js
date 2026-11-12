@@ -720,16 +720,43 @@
 
 // p.setAttribute("style", "background-color: red; color: white;");
 
- //challange-37
+//challange-37
 
 //Insert a button with text "click me" as the first element inside paragraph created in challange-36
 
-let p = document.createElement("p");
-p.innerText = "This is a new paragraph";
-p.style.backgroundColor = "red";
-p.style.color = "white";
-document.body.append(p);
+// let p = document.createElement("p");
+// p.innerText = "This is a new paragraph";
+// p.style.backgroundColor = "red";
+// p.style.color = "white";
+// document.body.append(p);
 
-let button = document.createElement("button");
-button.innerText = "click me";
-p.prepend(button);
+// let button = document.createElement("button");
+// button.innerText = "click me";
+// p.prepend(button);
+
+//challange-38
+//Create a <div> tag in html and give it a class and some styling .Now create a new class in css and try to append this class to the <div> element.
+
+// let div = document.createElement("div");
+// div.setAttribute("class", "new");
+
+// document.body.append(div);
+
+// Object.assign(div.style, {
+//   backgroundColor: "red",
+//   width: "100px",
+//   height: "100px",
+// });
+
+
+//challange 39
+
+//Create a function that takes node and newTagName and replace the node from the new node with changing tag name in the dom.
+
+function changeTageName(Oldnode, newTagName) {
+
+
+}
+
+let div = document.querySelector(".box");
+changeTageName(div, "p");
