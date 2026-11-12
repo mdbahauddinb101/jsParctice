@@ -790,13 +790,27 @@
 
 //Create a function that takes object with firstName, middleName, lastName and returns the full name
 
+// let obj = {
+//   firstName: "habu",
+//   middleName: "kumar",
+//   lastName: "lal",
+// };
+// function fullName(obj) {
+//   return `${obj.firstName} ${obj.middleName} ${obj.lastName}`;
+// }
+// let full = fullName(obj);
+// console.log(full);
+
+// challange - 42;
+// write a function that takes object and returns the number of properties in an object
+
 let obj = {
   firstName: "habu",
   middleName: "kumar",
   lastName: "lal",
 };
-function fullName(obj) {
-  return `${obj.firstName} ${obj.middleName} ${obj.lastName}`;
+function countProperties(obj) {
+  return Object.keys(obj);
 }
-let full = fullName(obj);
-console.log(full);
+let keys = countProperties(obj);
+console.log(keys);
