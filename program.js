@@ -752,18 +752,36 @@
 
 //Create a function that takes node and newTagName and replace the node from the new node with changing tag name in the dom.
 
-function changeTageName(oldNode, newTagName) {
-  if (oldNode instanceof Element) {
-    let p = document.createElement(newTagName);
-    p.innerHTML = oldNode.innerHTML;
-    for (let attr of oldNode.attributes) {
-      p.setAttribute(attr.name, attr.value);
-    }
-    oldNode.replaceWith(p);
-  } else {
-    console.error("invalid node");
-  }
-}
+// function changeTageName(oldNode, newTagName) {
+//   if (oldNode instanceof Element) {
+//     let p = document.createElement(newTagName);
+//     p.innerHTML = oldNode.innerHTML;
+//     for (let attr of oldNode.attributes) {
+//       p.setAttribute(attr.name, attr.value);
+//     }
+//     oldNode.replaceWith(p);
+//   } else {
+//     console.error("invalid node");
+//   }
+// }
 
-let div = document.querySelector(".box");
-changeTageName(div, "h1");
+// let div = document.querySelector(".box");
+// changeTageName(div, "h1");
+
+// challange -40
+
+// Create a person object with properties:"name,age,city.then
+// a) Log each property as value of "name" property is "Babu" using loops
+// b)add a new property called email to the person object.
+// c)remove the "city" property from the person object.
+
+let obj = {
+  name: "babu",
+  age: 20,
+  city: "chennai",
+};
+obj.email = "O9cYB@example.com";
+delete obj.city;
+for (let key in obj) {
+  console.log(`Value of ${key} is ${obj[key]}`);
+}
