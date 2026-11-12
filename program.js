@@ -804,13 +804,28 @@
 // challange - 42;
 // write a function that takes object and returns the number of properties in an object
 
-let obj = {
-  firstName: "habu",
-  middleName: "kumar",
-  lastName: "lal",
-};
-function countProperties(obj) {
-  return Object.keys(obj);
+// let obj = {
+//   firstName: "habu",
+//   middleName: "kumar",
+//   lastName: "lal",
+// };
+// function countProperties(obj) {
+//   return Object.keys(obj);
+// }
+// let keys = countProperties(obj);
+// console.log(keys);
+
+// challange-43
+// write a function that returns an array of names of users who have the role "admin"
+
+const users = [
+    { name: "John", role: "admin" },
+    { name: "Alice", role: "user" },
+    { name: "Bob", role: "admin" },
+    { name: "Eve", role: "user" },
+];
+
+function getAdminNames(users) {
+    return users.filter((user) => user.role === "admin").map((user) => user.name);
 }
-let keys = countProperties(obj);
-console.log(keys);
+console.log(getAdminNames(users));
