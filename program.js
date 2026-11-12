@@ -818,14 +818,31 @@
 // challange-43
 // write a function that returns an array of names of users who have the role "admin"
 
-const users = [
-    { name: "John", role: "admin" },
-    { name: "Alice", role: "user" },
-    { name: "Bob", role: "admin" },
-    { name: "Eve", role: "user" },
-];
+// const users = [
+//     { name: "John", role: "admin" },
+//     { name: "Alice", role: "user" },
+//     { name: "Bob", role: "admin" },
+//     { name: "Eve", role: "user" },
+// ];
 
-function getAdminNames(users) {
-    return users.filter((user) => user.role === "admin").map((user) => user.name);
+// function getAdminNames(users) {
+//     return users.filter((user) => user.role === "admin").map((user) => user.name);
+// }
+// console.log(getAdminNames(users));
+
+// challange-44
+
+// Write a function searchProducts(products, keyword)that returns an array of products whose name includes the given keyword(case sensitive)
+
+const products = [
+  { id: 1, name: "apple", price: 100 },
+  { id: 2, name: "banana", price: 200 },
+  { id: 3, name: "orange", price: 150 },
+  { id: 4, name: "grape", price: 300 },
+];
+function searchProducts(products, keyword) {
+  return products.filter((product) =>
+    product.name.toLowerCase().includes(keyword.toLowerCase()),  //true return korbe
+  );
 }
-console.log(getAdminNames(users));
+console.log(searchProducts(products, "b"));
