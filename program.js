@@ -834,15 +834,76 @@
 
 // Write a function searchProducts(products, keyword)that returns an array of products whose name includes the given keyword(case sensitive)
 
-const products = [
-  { id: 1, name: "apple", price: 100 },
-  { id: 2, name: "banana", price: 200 },
-  { id: 3, name: "orange", price: 150 },
-  { id: 4, name: "grape", price: 300 },
-];
-function searchProducts(products, keyword) {
-  return products.filter((product) =>
-    product.name.toLowerCase().includes(keyword.toLowerCase()),  //true return korbe
-  );
+// const products = [
+//   { id: 1, name: "apple", price: 100 },
+//   { id: 2, name: "banana", price: 200 },
+//   { id: 3, name: "orange", price: 150 },
+//   { id: 4, name: "grape", price: 300 },
+// ];
+// function searchProducts(products, keyword) {
+//   return products.filter((product) =>
+//     product.name.toLowerCase().includes(keyword.toLowerCase()),  //true return korbe
+//   );
+// }
+// console.log(searchProducts(products, "b"));
+
+// challange-45
+
+// Write a function groupByPost(comments) that returns an object grouping comments by post id.
+
+// {
+//     1: ["comment-1", "comment-2", "comment-3"],
+//     2: ["comment-4"],
+//     3: ["comment-5"],
+//     4: ["comment-6"],
+//     5: ["comment-7"],
+//     6: ["comment-8"],
+//     7: ["comment-9"],
+//     8: ["comment-10"],
+// }
+
+// const comments = [
+//   { id: 1, post_id: 1, text: "Comment 1" },
+//   { id: 2, post_id: 1, text: "Comment 2" },
+//   { id: 3, post_id: 1, text: "Comment 3" },
+//   { id: 4, post_id: 3, text: "Comment 4" },
+//   { id: 5, post_id: 4, text: "Comment 5" },
+//   { id: 6, post_id: 5, text: "Comment 6" },
+//   { id: 7, post_id: 6, text: "Comment 7" },
+//   { id: 8, post_id: 7, text: "Comment 8" },
+//   { id: 9, post_id: 8, text: "Comment 9" },
+//   { id: 10, post_id: 9, text: "Comment 10" },
+// ];
+
+// function groupByPost(comments) {
+//   let groupedComments = {};
+
+//   comments.forEach((obj) => {
+//     if (groupedComments.hasOwnProperty(obj.post_id)) {
+//       groupedComments[obj.post_id].push(obj.text);
+//     } else {
+//       groupedComments[obj.post_id] = [obj.text];
+//     }
+//   });
+//   console.log(groupedComments);
+// }
+
+// groupByPost(comments);
+
+// challange-46
+
+// Write a function buildQuery(params) that returns
+
+const params = { search: "laptop", page: 2, sort: "price" };
+
+function createUrl(params) {
+  let url = "";
+  for (let key in params) {
+    url = url + `${key}=${params[key]}&`;
+  }
+
+  let finalurl = url.slice(0, url.length - 1);
+  console.log(finalurl);
 }
-console.log(searchProducts(products, "b"));
+
+createUrl(params);
