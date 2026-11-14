@@ -894,16 +894,25 @@
 
 // Write a function buildQuery(params) that returns
 
-const params = { search: "laptop", page: 2, sort: "price" };
+// const params = { search: "laptop", page: 2, sort: "price" };
 
-function createUrl(params) {
-  let url = "";
-  for (let key in params) {
-    url = url + `${key}=${params[key]}&`;
-  }
+// function createUrl(params) {
+//   let url = "";
+//   for (let key in params) {
+//     url = url + `${key}=${params[key]}&`;
+//   }
 
-  let finalurl = url.slice(0, url.length - 1);
-  console.log(finalurl);
-}
+//   let finalurl = url.slice(0, url.length - 1);
+//   console.log(finalurl);
+// }
 
-createUrl(params);
+// createUrl(params);
+
+// challange-47
+
+// Create a simple website with theme changing functionality
+
+let button = document.querySelector("button");
+button.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
