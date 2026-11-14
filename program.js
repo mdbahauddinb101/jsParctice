@@ -950,19 +950,44 @@
 
 // challange-50
 
-let incrementBtn = document.querySelector(".incrementBtn");
-let decrementBtn = document.querySelector(".decrementBtn");
-let counter = document.querySelector(".counter");
-let count = 1;
-incrementBtn.addEventListener("click", () => {
-  count++;
-  counter.innerText = count;
-});
-decrementBtn.addEventListener("click", () => {
-  if (count > 1) {
-    count--;
-    counter.innerText = count;
-  } else {
-    console.log("count can't be less than 1");
+// let incrementBtn = document.querySelector(".incrementBtn");
+// let decrementBtn = document.querySelector(".decrementBtn");
+// let counter = document.querySelector(".counter");
+// let count = 1;
+// incrementBtn.addEventListener("click", () => {
+//   count++;
+//   counter.innerText = count;
+// });
+// decrementBtn.addEventListener("click", () => {
+//   if (count > 1) {
+//     count--;
+//     counter.innerText = count;
+//   } else {
+//     console.log("count can't be less than 1");
+//   }
+// });
+
+// challange-51
+
+// Create a simple form and display the submitted details on the Webpage. Ensure that if any field is left empty, the form should not be submitted.
+let form = document.querySelector("form");
+let nameInput = document.querySelector("#name");
+let emailInput = document.querySelector("#email");
+let submitBtn = document.querySelector(".submitBtn");
+let body = document.querySelector("body");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (!nameInput.value || !emailInput.value) {
+    alert("Please fill all the fields");
+    return;
   }
+
+  let div = document.createElement("div");
+
+  div.innerHTML = `
+<p>${nameInput.value}</p>
+<p>${emailInput.value}</p>
+`;
+
+  body.append(div);
 });
