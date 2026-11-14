@@ -912,7 +912,23 @@
 
 // Create a simple website with theme changing functionality
 
+// let button = document.querySelector("button");
+// button.addEventListener("click", () => {
+//   document.body.classList.toggle("dark");
+// });
+
+// challange-48
+// Solve first question by changing css class.
+
 let button = document.querySelector("button");
+let body = document.querySelector("body");
+
 button.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
+  if (body.className === "dark") {
+    body.className = "light";
+    button.innerText = "Light Mode";
+  } else {
+    body.className = "dark";
+    button.innerText = "Dark Mode";
+  }
 });
