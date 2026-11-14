@@ -937,13 +937,32 @@
 
 // Solve the question by toggle class.
 
-let button = document.querySelector("button");
-let body = document.querySelector("body");
-button.addEventListener("click", () => {
-  body.classList.toggle("dark");
-  if (body.className === "dark") {
-    button.innerText = "Light Mode";
+// let button = document.querySelector("button");
+// let body = document.querySelector("body");
+// button.addEventListener("click", () => {
+//   body.classList.toggle("dark");
+//   if (body.className === "dark") {
+//     button.innerText = "Light Mode";
+//   } else {
+//     button.innerText = "Dark Mode";
+//   }
+// });
+
+// challange-50
+
+let incrementBtn = document.querySelector(".incrementBtn");
+let decrementBtn = document.querySelector(".decrementBtn");
+let counter = document.querySelector(".counter");
+let count = 1;
+incrementBtn.addEventListener("click", () => {
+  count++;
+  counter.innerText = count;
+});
+decrementBtn.addEventListener("click", () => {
+  if (count > 1) {
+    count--;
+    counter.innerText = count;
   } else {
-    button.innerText = "Dark Mode";
+    console.log("count can't be less than 1");
   }
 });
