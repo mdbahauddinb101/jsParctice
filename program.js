@@ -920,15 +920,30 @@
 // challange-48
 // Solve first question by changing css class.
 
+// let button = document.querySelector("button");
+// let body = document.querySelector("body");
+
+// button.addEventListener("click", () => {
+//   if (body.className === "dark") {
+//     body.className = "light";
+//     button.innerText = "Light Mode";
+//   } else {
+//     body.className = "dark";
+//     button.innerText = "Dark Mode";
+//   }
+// });
+
+// challange-49
+
+// Solve the question by toggle class.
+
 let button = document.querySelector("button");
 let body = document.querySelector("body");
-
 button.addEventListener("click", () => {
+  body.classList.toggle("dark");
   if (body.className === "dark") {
-    body.className = "light";
     button.innerText = "Light Mode";
   } else {
-    body.className = "dark";
     button.innerText = "Dark Mode";
   }
 });
