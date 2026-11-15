@@ -970,24 +970,24 @@
 // challange-51
 
 // Create a simple form and display the submitted details on the Webpage. Ensure that if any field is left empty, the form should not be submitted.
-let form = document.querySelector("form");
-let nameInput = document.querySelector("#name");
-let emailInput = document.querySelector("#email");
-let submitBtn = document.querySelector(".submitBtn");
-let body = document.querySelector("body");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  if (!nameInput.value || !emailInput.value) {
-    alert("Please fill all the fields");
-    return;
-  }
+// let form = document.querySelector("form");
+// let nameInput = document.querySelector("#name");
+// let emailInput = document.querySelector("#email");
+// let submitBtn = document.querySelector(".submitBtn");
+// let body = document.querySelector("body");
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   if (!nameInput.value || !emailInput.value) {
+//     alert("Please fill all the fields");
+//     return;
+//   }
 
-  let div = document.createElement("div");
+//   let div = document.createElement("div");
 
-  div.innerHTML = `
-<p>${nameInput.value}</p>
-<p>${emailInput.value}</p>
-`;
+//   div.innerHTML = `
+// <p>${nameInput.value}</p>
+// <p>${emailInput.value}</p>
+// `;
 
-  body.append(div);
-});
+//   body.append(div);
+// });
