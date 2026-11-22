@@ -1032,17 +1032,25 @@
 // let arr = [1, 4, 2, 5, 7, 9, "babu", "azam", "koli"];
 
 // let result = arr.filter((item) => {
-  //   if (typeof item === "string") {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  //   if (typeof item === "string") {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
+//   if (typeof item === "string") {
+//     return true;
+//   } else {
+//     return false;
+//   }
+//   if (typeof item === "string") {
+//     return true;
+//   } else {
+//     return false;
+//   }
 //   return typeof item === "string";
 // });
 
 // console.log(result);
+
+//challange-55
+//Find the maximum number in array
+
+// let arr = [1, 4, 2, 5, 7, 9];
+
+// let arr1 = Math.max(...arr);
+// console.log(arr1);
