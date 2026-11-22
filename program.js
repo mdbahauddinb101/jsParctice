@@ -1015,3 +1015,12 @@
 // // let arrJoin = [...arr1, ...arr2]
 
 // console.log(arrjoin);
+
+// challange-54
+
+//Genarate a random integer between 0 to 18
+// let randomNumber = Math.random() * 19;
+
+// let FloorNumber = Math.floor(randomNumber);
+
+// console.log(FloorNumber);
