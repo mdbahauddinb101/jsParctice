@@ -1024,3 +1024,25 @@
 // let FloorNumber = Math.floor(randomNumber);
 
 // console.log(FloorNumber);
+
+//challange-54
+
+// Create a function that takes an array containing both numbers and strings, and returns a new array containing only the string values
+
+// let arr = [1, 4, 2, 5, 7, 9, "babu", "azam", "koli"];
+
+// let result = arr.filter((item) => {
+  //   if (typeof item === "string") {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  //   if (typeof item === "string") {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+//   return typeof item === "string";
+// });
+
+// console.log(result);
