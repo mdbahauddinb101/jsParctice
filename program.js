@@ -996,11 +996,22 @@
 
 //Create a function that returns the last element of an array.
 
-function getLastElement(arr) {
-  return arr[arr.length - 1];
-}
+// function getLastElement(arr) {
+//   return arr[arr.length - 1];
+// }
 
-let arr = [1, 4, 2, 5, 7, 9];
+// let arr = [1, 4, 2, 5, 7, 9];
 
-let lastElement = getLastElement(arr);
-console.log(lastElement);
+// let lastElement = getLastElement(arr);
+// console.log(lastElement);
+
+//challange-53
+// find the combination of two array
+
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [6, 7, 8, 9, 10];
+
+// let arrjoin = arr1.concat(arr2);
+// // let arrJoin = [...arr1, ...arr2]
+
+// console.log(arrjoin);
