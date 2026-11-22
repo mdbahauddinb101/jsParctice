@@ -991,3 +991,16 @@
 
 //   body.append(div);
 // });
+
+// challange-52
+
+//Create a function that returns the last element of an array.
+
+function getLastElement(arr) {
+  return arr[arr.length - 1];
+}
+
+let arr = [1, 4, 2, 5, 7, 9];
+
+let lastElement = getLastElement(arr);
+console.log(lastElement);
