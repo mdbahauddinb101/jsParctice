@@ -1054,3 +1054,15 @@
 
 // let arr1 = Math.max(...arr);
 // console.log(arr1);
+
+//challange-56
+
+//Write a function that returns the length of a given object (number of keys)
+
+// let obj = {
+//   name: "babu",
+//   age: 21,
+// };
+
+// let keys = Object.keys(obj).length;
+// console.log(keys);
