@@ -11,7 +11,9 @@ closeBtn.addEventListener("click", function () {
 });
 
 modalContainer.addEventListener("click", function (e) {
-  if (e.target.className === "modalContainer") {
-    modalContainer.style.display = "none";
-  }
+  // if (e.target.className === "modalContainer") {
+  //   modalContainer.style.display = "none";
+  // }
+
+  console.log(e);
 });
