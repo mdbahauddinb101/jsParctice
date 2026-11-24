@@ -1063,6 +1063,13 @@
 //   name: "babu",
 //   age: 21,
 // };
+// function func(obj) {
+//   let keys = Object.keys(obj).length;
+//   console.log(keys);
+// }
 
-// let keys = Object.keys(obj).length;
-// console.log(keys);
+// func(obj);
+
+// Challange - 57;
+
+//In an array of objects filter out those  objects which have gender's value male

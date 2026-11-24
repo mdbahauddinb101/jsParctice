@@ -1,0 +1,47 @@
+/* * {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.grand-parent {
+  padding: 100px;
+  background-color: black;
+}
+
+.parent {
+  padding: 70px;
+  background-color: brown;
+}
+
+.child {
+  padding: 50px;
+  background-color: aqua;
+} */
+
+.container {
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: brown;
+  color: white;
+  font-size: 60px;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+}
