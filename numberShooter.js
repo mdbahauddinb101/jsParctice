@@ -24,7 +24,7 @@ function timerReset() {
 function endGame() {
   clearInterval(intervalId);
 
-  numberContainer.innerHTML = "Game Over";
+  numberContainer.innerHTML = `"<div/> game Over <button onclick=restartGame()> restart GAME</button> </div>"`;
 }
 
 function generateTarget() {
@@ -43,7 +43,7 @@ function generateNumbers() {
 }
 
 function restartGame() {
-  timer = 60;
+  timer = 5;
   score = 0;
   scoreValue.innerText = score;
   generateNumbers();
