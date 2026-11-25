@@ -24,7 +24,7 @@ function timerReset() {
 function endGame() {
   clearInterval(intervalId);
 
-  numberContainer.innerHTML = `"<div/> game Over <button onclick=restartGame()> restart GAME</button> </div>"`;
+  numberContainer.innerHTML = `<div> game Over <button onclick=restartGame()> restart GAME</button> </div>`;
 }
 
 function generateTarget() {

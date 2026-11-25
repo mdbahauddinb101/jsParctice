@@ -42,3 +42,10 @@ header {
   color: white;
   cursor: pointer;
 }
+
+button {
+  padding: 10px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+}
