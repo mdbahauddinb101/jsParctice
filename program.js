@@ -1182,16 +1182,28 @@
 
 // Challange 64
 //Build a Simple isPrime() function to check if a number is prime
-function isPrime(num) {
-  if (num === 0 || num === 1) {
-    return false;
-  }
+// function isPrime(num) {
+//   if (num === 0 || num === 1) {
+//     return false;
+//   }
 
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) return false;
-  }
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) return false;
+//   }
 
-  return true;
+//   return true;
+// }
+
+// console.log(isPrime(4));
+
+//Challange-65
+
+//Create a function that removes duplicate values from an array
+
+function removeDuplicate(arr) {
+  let set = new Set(arr);
+  return [...set];
 }
 
-console.log(isPrime(4));
+let result = removeDuplicate([1, 1, 2, 3, 3, 45, 66, 66, 10]);
+console.log(result);
