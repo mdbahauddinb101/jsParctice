@@ -1237,3 +1237,12 @@
 // let num = 123;
 
 // console.log(Number.isInteger(num));
+
+// Challange-69
+// Write a javascript function that reverse a number
+
+function reverseNumber(num) {
+  console.log(num.toString().split("").reverse().join(""));
+}
+
+reverseNumber(12345);
