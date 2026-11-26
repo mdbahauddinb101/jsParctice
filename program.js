@@ -1114,10 +1114,26 @@
 
 // Given an array of strings, return a new array where all strings are in uppercase
 
-let arr = ["habu", "babu", "lebu", "tabu"];
+// let arr = ["habu", "babu", "lebu", "tabu"];
 
-let newarr = arr.map((item) => {
-  return item.toUpperCase();
-});
+// let newarr = arr.map((item) => {
+//   return item.toUpperCase();
+// });
 
-console.log(newarr);
+// console.log(newarr);
+
+//Challange - 59
+
+//Check if an object is empty (has no key)
+
+let obj = {};
+
+let keysarr = Object.keys(obj);
+
+let isEmptyObject = keysarr.length < 1;
+
+if (isEmptyObject) {
+  console.log("object is empty");
+} else {
+  console.log("object is not empty");
+}
