@@ -1084,28 +1084,40 @@
 
 //In an array of objects filter out those  objects which have gender's value male.
 
-let arr = [
-  {
-    name: "boby",
-    age: 21,
-    gender: "female",
-  },
+// let arr = [
+//   {
+//     name: "boby",
+//     age: 21,
+//     gender: "female",
+//   },
 
-  {
-    name: "babu",
-    age: 22,
-    gender: "male",
-  },
+//   {
+//     name: "babu",
+//     age: 22,
+//     gender: "male",
+//   },
 
-  {
-    name: "habu",
-    age: 23,
-    gender: "male",
-  },
-];
+//   {
+//     name: "habu",
+//     age: 23,
+//     gender: "male",
+//   },
+// ];
 
-let filtergender = arr.filter((item) => {
-  return item.gender === "male";
+// let filtergender = arr.filter((item) => {
+//   return item.gender === "male";
+// });
+
+// console.log(filtergender);
+
+//Challange - 58
+
+// Given an array of strings, return a new array where all strings are in uppercase
+
+let arr = ["habu", "babu", "lebu", "tabu"];
+
+let newarr = arr.map((item) => {
+  return item.toUpperCase();
 });
 
-console.log(filtergender);
+console.log(newarr);
