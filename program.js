@@ -1137,3 +1137,11 @@ if (isEmptyObject) {
 } else {
   console.log("object is not empty");
 }
+
+//Challange- 60
+let arr = [10, 20, 30, 40, 50];
+let result = arr.map((item) => {
+  return item * 2;
+});
+
+console.log(result);
