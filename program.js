@@ -1166,11 +1166,32 @@
 //Challange - 63
 
 //Write a function that checks if all elements in an array are numbers
-let arr = [1, 4, 2, 5, 7, 9, "babu", "azam", "koli"];
-function newarr(arr) {
-  return arr.filter((item) => {
-    return typeof item === "number";
-  });
+// let arr = [1, 4, 2, 5, 7, 9, "babu", "azam", "koli"];
+// function newarr(arr) {
+//   return arr.filter((item) => {
+//     return typeof item === "number";
+//   });
+// }
+// let result = newarr(arr);
+// console.log(result);
+
+// let isnumber = arr.every((elem) => {
+//   typeof elem === "number";
+// });
+// console.log(isnumber);
+
+// Challange 64
+//Build a Simple isPrime() function to check if a number is prime
+function isPrime(num) {
+  if (num === 0 || num === 1) {
+    return false;
+  }
+
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+
+  return true;
 }
-let result = newarr(arr);
-console.log(result);
+
+console.log(isPrime(4));
