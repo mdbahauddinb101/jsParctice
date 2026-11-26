@@ -1211,9 +1211,22 @@
 //Challange- 66
 //Create a function that reverse each word af a given sentence.
 
-let str = "Mai hun manas";
-let result = str.split(" ").map((item) => {
-  let reverseword = item.split("").reverse().join("");
-  return reverseword;
+// let str = "Mai hun manas";
+// let result = str.split(" ").map((item) => {
+//   let reverseword = item.split("").reverse().join("");
+//   return reverseword;
+// });
+// console.log(result.join(""));
+
+// Challange -67
+//In an array of numbers and strings only add those numbers which are not strings
+
+let arr = [1, 4, 2, 5, 7, 9, "babu", "azam", "koli"];
+let sum = 0;
+
+arr.forEach((item) => {
+  if (typeof item === "number") {
+    sum += item;
+  }
 });
-console.log(result.join(""));
+console.log(sum);
