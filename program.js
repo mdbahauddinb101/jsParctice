@@ -1149,7 +1149,16 @@
 //Challange - 61
 //Convert an array of strings into a single comma-seperated strings
 
-let arr = [1, 4, 2, 5, 7, 9, "babu", "azam", "koli"];
+// let arr = [1, 4, 2, 5, 7, 9, "babu", "azam", "koli"];
 
-let string = arr.join();
-console.log(string);
+// let string = arr.join();
+// console.log(string);
+
+//Challange - 62
+//Write a function to flaten a nested array (one deep level)
+
+let arr = [1, 2, 3, 4, ["a", "b", "c"], 5];
+arr.splice(4, 1, ...arr[4]);
+console.log(arr);
+
+console.log(arr.flat())
