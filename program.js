@@ -1200,10 +1200,20 @@
 
 //Create a function that removes duplicate values from an array
 
-function removeDuplicate(arr) {
-  let set = new Set(arr);
-  return [...set];
-}
+// function removeDuplicate(arr) {
+//   let set = new Set(arr);
+//   return [...set];
+// }
 
-let result = removeDuplicate([1, 1, 2, 3, 3, 45, 66, 66, 10]);
-console.log(result);
+// let result = removeDuplicate([1, 1, 2, 3, 3, 45, 66, 66, 10]);
+// console.log(result);
+
+//Challange- 66
+//Create a function that reverse each word af a given sentence.
+
+let str = "Mai hun manas";
+let result = str.split(" ").map((item) => {
+  let reverseword = item.split("").reverse().join("");
+  return reverseword;
+});
+console.log(result.join(""));
