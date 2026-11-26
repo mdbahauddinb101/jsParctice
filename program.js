@@ -992,7 +992,7 @@
 //   body.append(div);
 // });
 
-// challange-52
+// challange-52....................................................................................
 
 //Create a function that returns the last element of an array.
 
@@ -1012,7 +1012,7 @@
 // let arr2 = [6, 7, 8, 9, 10];
 
 // let arrjoin = arr1.concat(arr2);
-// // let arrJoin = [...arr1, ...arr2]
+// let arrJoin = [...arr1, ...arr2]
 
 // console.log(arrjoin);
 
@@ -1070,6 +1070,42 @@
 
 // func(obj);
 
+//......................... Math.random case
+
+// let min = 1;
+// let max = 10;
+
+// let result = Math.random() * (max - min + 1) + min;
+// let final = Math.floor(result);
+// console.log(final);
+//.................................................
+
 // Challange - 57;
 
-//In an array of objects filter out those  objects which have gender's value male
+//In an array of objects filter out those  objects which have gender's value male.
+
+let arr = [
+  {
+    name: "boby",
+    age: 21,
+    gender: "female",
+  },
+
+  {
+    name: "babu",
+    age: 22,
+    gender: "male",
+  },
+
+  {
+    name: "habu",
+    age: 23,
+    gender: "male",
+  },
+];
+
+let filtergender = arr.filter((item) => {
+  return item.gender === "male";
+});
+
+console.log(filtergender);
