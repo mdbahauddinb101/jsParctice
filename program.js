@@ -1157,8 +1157,20 @@
 //Challange - 62
 //Write a function to flaten a nested array (one deep level)
 
-let arr = [1, 2, 3, 4, ["a", "b", "c"], 5];
-arr.splice(4, 1, ...arr[4]);
-console.log(arr);
+// let arr = [1, 2, 3, 4, ["a", "b", "c"], 5];
+// arr.splice(4, 1, ...arr[4]);
+// console.log(arr);
 
-console.log(arr.flat())
+// console.log(arr.flat())
+
+//Challange - 63
+
+//Write a function that checks if all elements in an array are numbers
+let arr = [1, 4, 2, 5, 7, 9, "babu", "azam", "koli"];
+function newarr(arr) {
+  return arr.filter((item) => {
+    return typeof item === "number";
+  });
+}
+let result = newarr(arr);
+console.log(result);
