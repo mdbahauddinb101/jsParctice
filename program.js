@@ -1126,22 +1126,30 @@
 
 //Check if an object is empty (has no key)
 
-let obj = {};
+// let obj = {};
 
-let keysarr = Object.keys(obj);
+// let keysarr = Object.keys(obj);
 
-let isEmptyObject = keysarr.length < 1;
+// let isEmptyObject = keysarr.length < 1;
 
-if (isEmptyObject) {
-  console.log("object is empty");
-} else {
-  console.log("object is not empty");
-}
+// if (isEmptyObject) {
+//   console.log("object is empty");
+// } else {
+//   console.log("object is not empty");
+// }
 
 //Challange- 60
-let arr = [10, 20, 30, 40, 50];
-let result = arr.map((item) => {
-  return item * 2;
-});
+// let arr = [10, 20, 30, 40, 50];
+// let result = arr.map((item) => {
+//   return item * 2;
+// });
 
-console.log(result);
+// console.log(result);
+
+//Challange - 61
+//Convert an array of strings into a single comma-seperated strings
+
+let arr = [1, 4, 2, 5, 7, 9, "babu", "azam", "koli"];
+
+let string = arr.join();
+console.log(string);
