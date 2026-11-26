@@ -1221,12 +1221,19 @@
 // Challange -67
 //In an array of numbers and strings only add those numbers which are not strings
 
-let arr = [1, 4, 2, 5, 7, 9, "babu", "azam", "koli"];
-let sum = 0;
+// let arr = [1, 4, 2, 5, 7, 9, "babu", "azam", "koli"];
+// let sum = 0;
 
-arr.forEach((item) => {
-  if (typeof item === "number") {
-    sum += item;
-  }
-});
-console.log(sum);
+// arr.forEach((item) => {
+//   if (typeof item === "number") {
+//     sum += item;
+//   }
+// });
+// console.log(sum);
+
+//Challange 68
+
+//How would you check if a number is an integer
+// let num = 123;
+
+// console.log(Number.isInteger(num));
